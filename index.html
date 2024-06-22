@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo ao meu Portfólio</h1>
+        <p>Explore meus projetos e entre em contato!</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Informações sobre você.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Meus Projetos</h2>
+        <div class="project-gallery">
+            <div class="project" data-title="Projeto 1" data-description="Descrição do Projeto 1">
+                <img src="https://via.placeholder.com/300x200.png?text=Projeto+1" alt="Projeto 1">
+            </div>
+            <div class="project" data-title="Projeto 2" data-description="Descrição do Projeto 2">
+                <img src="https://via.placeholder.com/300x200.png?text=Projeto+2" alt="Projeto 2">
+            </div>
+            <div class="project" data-title="Projeto 3" data-description="Descrição do Projeto 3">
+                <img src="https://via.placeholder.com/300x200.png?text=Projeto+3" alt="Projeto 3">
+            </div>
+            <div class="project" data-title="Projeto 4" data-description="Descrição do Projeto 4">
+                <img src="https://via.placeholder.com/300x200.png?text=Projeto+4" alt="Projeto 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
